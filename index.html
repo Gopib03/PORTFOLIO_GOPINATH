@@ -2,117 +2,209 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Gopinath's AI Portfolio</title>
-  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet" />
+  <style>
+    #mainContent {
+      display: none;
+    }
+    #homeScreen {
+      height: 100vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      background-color: #1f2937; /* Tailwind gray-800 */
+      color: white;
+      font-family: 'Arial', sans-serif;
+      text-align: center;
+      padding: 2rem;
+      outline: none;
+    }
+    #homeScreen p {
+      margin-top: 1rem;
+      font-size: 1.25rem;
+      color: #9ca3af; /* Tailwind gray-400 */
+    }
+  </style>
 </head>
 <body class="bg-gray-900 text-white font-sans">
 
-  <!-- Header -->
-  <header class="p-6 bg-gray-800 shadow">
-    <h1 class="text-3xl font-bold">Gopinath Boyapalli</h1>
-    <p class="text-sm text-gray-400">AI Solutions Engineer | Prompt Engineer | Generative AI Developer</p>
-  </header>
+  <!-- Home Screen -->
+  <div id="homeScreen" tabindex="0">
+    <h1 class="text-4xl font-bold">Hello,</h1>
+    <h2 class="text-3xl mt-2">This is Gopinath</h2>
+    <h3 class="text-2xl mt-1">Welcome to my portfolio</h3>
+    <p>Press <strong>Enter</strong> to continue</p>
+    <p>Thank You.</p>
+  </div>
 
-  <!-- Hero Section -->
-  <section class="p-8 text-center">
-    <h2 class="text-2xl font-semibold">Welcome to My AI Portfolio</h2>
-    <p class="mt-4 text-gray-300">Explore my AI projects, certifications, and research work in Generative AI and Machine Learning.</p>
-  </section>
+  <!-- Main Content -->
+  <div id="mainContent">
 
-  <!-- Projects Section -->
-  <section class="p-8">
-    <h3 class="text-xl font-semibold mb-6">Projects</h3>
+    <!-- Header -->
+    <header class="p-6 bg-gray-800 shadow">
+      <h1 class="text-3xl font-bold">Gopinath Boyapalli</h1>
+      <p class="text-sm text-gray-400">AI Solutions Engineer | Prompt Engineer | Generative AI Developer</p>
+    </header>
 
-    <!-- AI Projects -->
-    <div class="mb-8">
-      <h4 class="text-lg font-semibold mb-4 text-blue-300">AI Projects</h4>
-      <div class="space-y-6">
-        <div class="bg-gray-800 p-6 rounded-lg shadow-lg">
-          <h5 class="text-lg font-bold">Resume Builder Chatbot</h5>
-          <p class="text-gray-300 mt-2">GPT-4 chatbot using LangChain to help users generate resumes through prompts. Deployed via Streamlit.</p>
-          <p class="mt-2 text-sm text-gray-400">Tech: OpenAI, LangChain, Streamlit, Python</p>
-        </div>
+    <!-- Hero Section -->
+    <section class="p-8 text-center">
+      <h2 class="text-2xl font-semibold">Welcome to My AI Portfolio</h2>
+      <p class="mt-4 text-gray-300">Explore my AI projects, certifications, and research work in Generative AI and Machine Learning.</p>
+    </section>
 
-        <div class="bg-gray-800 p-6 rounded-lg shadow-lg">
-          <h5 class="text-lg font-bold">AI Quiz Generator</h5>
-          <p class="text-gray-300 mt-2">Dynamic quiz generation and evaluation tool using GPT-4 with real-time feedback.</p>
-          <p class="mt-2 text-sm text-gray-400">Tech: GPT-4, Python, Streamlit</p>
-        </div>
+    <!-- Projects Section -->
+    <section class="p-8">
+      <h3 class="text-xl font-semibold mb-6">Projects</h3>
 
-        <div class="bg-gray-800 p-6 rounded-lg shadow-lg">
-          <h5 class="text-lg font-bold">Image Classification using Roboflow</h5>
-          <p class="text-gray-300 mt-2">Classifies plant diseases with Roboflow + TensorFlow; includes preprocessing and augmentation pipeline.</p>
-          <p class="mt-2 text-sm text-gray-400">Tech: Roboflow, TensorFlow, Python</p>
+      <!-- AI Projects -->
+      <div class="mb-8">
+        <h4 class="text-lg font-semibold mb-4 text-blue-300">AI Projects</h4>
+        <div class="space-y-6">
+          <div class="bg-gray-800 p-6 rounded-lg shadow-lg">
+            <h5 class="text-lg font-bold">
+              <a href="https://github.com/Gopib03/resume-builder-chatbot#readme" target="_blank" class="text-blue-400 hover:underline">
+                Resume Builder Chatbot
+              </a>
+            </h5>
+            <p class="text-gray-300 mt-2">
+              <a href="https://github.com/Gopib03/resume-builder-chatbot#readme" target="_blank" class="hover:underline">
+                GPT-4 chatbot using LangChain to help users generate resumes through prompts. Deployed via Streamlit.
+              </a>
+            </p>
+            <p class="mt-2 text-sm text-gray-400">Tech: OpenAI, LangChain, Streamlit, Python</p>
+          </div>
+
+          <div class="bg-gray-800 p-6 rounded-lg shadow-lg">
+            <h5 class="text-lg font-bold">
+              <a href="https://github.com/Gopib03/ai-quiz-generator#readme" target="_blank" class="text-blue-400 hover:underline">
+                AI Quiz Generator
+              </a>
+            </h5>
+            <p class="text-gray-300 mt-2">
+              <a href="https://github.com/Gopib03/ai-quiz-generator#readme" target="_blank" class="hover:underline">
+                Dynamic quiz generation and evaluation tool using GPT-4 with real-time feedback.
+              </a>
+            </p>
+            <p class="mt-2 text-sm text-gray-400">Tech: GPT-4, Python, Streamlit</p>
+          </div>
+
+          <div class="bg-gray-800 p-6 rounded-lg shadow-lg">
+            <h5 class="text-lg font-bold">
+              <a href="https://github.com/Gopib03/roboflow-image-classification#readme" target="_blank" class="text-blue-400 hover:underline">
+                Image Classification using Roboflow
+              </a>
+            </h5>
+            <p class="text-gray-300 mt-2">
+              <a href="https://github.com/Gopib03/roboflow-image-classification#readme" target="_blank" class="hover:underline">
+                Classifies plant diseases with Roboflow + TensorFlow; includes preprocessing and augmentation pipeline.
+              </a>
+            </p>
+            <p class="mt-2 text-sm text-gray-400">Tech: Roboflow, TensorFlow, Python</p>
+          </div>
         </div>
       </div>
-    </div>
 
-    <!-- Cloud Projects -->
-    <div class="mb-8">
-      <h4 class="text-lg font-semibold mb-4 text-blue-300">Cloud Projects</h4>
-      <div class="space-y-6">
-        <div class="bg-gray-800 p-6 rounded-lg shadow-lg">
-          <h5 class="text-lg font-bold">Deploying Python Flask App on AWS</h5>
-          <p class="text-gray-300 mt-2">CI/CD pipeline via Jenkins on EC2, infrastructure with Terraform (EC2, ELB), RDS, Route 53 & HTTPS.</p>
-          <p class="mt-2 text-sm text-gray-400">Tech: AWS, Jenkins, Terraform, Flask, RDS</p>
+      <!-- Cloud Projects -->
+      <div class="mb-8">
+        <h4 class="text-lg font-semibold mb-4 text-blue-300">Cloud Projects</h4>
+        <div class="space-y-6">
+          <div class="bg-gray-800 p-6 rounded-lg shadow-lg">
+            <h5 class="text-lg font-bold">
+              <a href="https://github.com/Gopib03/flask-aws-deployment#readme" target="_blank" class="text-blue-400 hover:underline">
+                Deploying Python Flask App on AWS
+              </a>
+            </h5>
+            <p class="text-gray-300 mt-2">
+              <a href="https://github.com/Gopib03/flask-aws-deployment#readme" target="_blank" class="hover:underline">
+                CI/CD pipeline via Jenkins on EC2, infrastructure with Terraform (EC2, ELB), RDS, Route 53 & HTTPS.
+              </a>
+            </p>
+            <p class="mt-2 text-sm text-gray-400">Tech: AWS, Jenkins, Terraform, Flask, RDS</p>
+          </div>
         </div>
       </div>
-    </div>
 
-    <!-- Advanced Computer Vision Projects -->
-    <div>
-      <h4 class="text-lg font-semibold mb-4 text-blue-300">Advanced Computer Vision</h4>
-      <div class="space-y-6">
-        <div class="bg-gray-800 p-6 rounded-lg shadow-lg">
-          <h5 class="text-lg font-bold">DevOps Capstone – Secure Microservice Deployment</h5>
-          <p class="text-gray-300 mt-2">RESTful microservice with CI/CD using GitHub Actions, Docker, Kubernetes, deployed via Tekton on OpenShift.</p>
-          <p class="mt-2 text-sm text-gray-400">Tech: Docker, Kubernetes, GitHub Actions, Tekton, OpenShift</p>
+      <!-- Advanced Computer Vision Projects -->
+      <div>
+        <h4 class="text-lg font-semibold mb-4 text-blue-300">Advanced Computer Vision</h4>
+        <div class="space-y-6">
+          <div class="bg-gray-800 p-6 rounded-lg shadow-lg">
+            <h5 class="text-lg font-bold">
+              <a href="https://github.com/Gopib03/secure-microservice-deployment#readme" target="_blank" class="text-blue-400 hover:underline">
+                DevOps Capstone – Secure Microservice Deployment
+              </a>
+            </h5>
+            <p class="text-gray-300 mt-2">
+              <a href="https://github.com/Gopib03/secure-microservice-deployment#readme" target="_blank" class="hover:underline">
+                RESTful microservice with CI/CD using GitHub Actions, Docker, Kubernetes, deployed via Tekton on OpenShift.
+              </a>
+            </p>
+            <p class="mt-2 text-sm text-gray-400">Tech: Docker, Kubernetes, GitHub Actions, Tekton, OpenShift</p>
+          </div>
         </div>
       </div>
-    </div>
-  </section>
+    </section>
 
-  <!-- Certifications Section -->
-  <section class="p-8">
-    <h3 class="text-xl font-semibold mb-4">Certifications</h3>
-    <ul class="list-disc list-inside text-gray-300">
-      <li>ChatGPT Prompt Engineering for Developers – DeepLearning.AI</li>
-      <li>Fundamentals of Deep Learning – NVIDIA DLI</li>
-      <li>Introduction to Generative AI – AWS Skill Builder</li>
-      <li>AI for Everyone – Coursera (Andrew Ng)</li>
-      <li>Machine Learning Specialization – Coursera (Stanford University)</li>
-    </ul>
-  </section>
+    <!-- Certifications Section -->
+    <section class="p-8">
+      <h3 class="text-xl font-semibold mb-4">Certifications</h3>
+      <ul class="list-disc list-inside text-gray-300">
+        <li>ChatGPT Prompt Engineering for Developers – DeepLearning.AI</li>
+        <li>Fundamentals of Deep Learning – NVIDIA DLI</li>
+        <li>Introduction to Generative AI – AWS Skill Builder</li>
+        <li>AI for Everyone – Coursera (Andrew Ng)</li>
+        <li>Machine Learning Specialization – Coursera (Stanford University)</li>
+      </ul>
+    </section>
 
-  <!-- Academic Research Section -->
-  <section class="p-8">
-    <h3 class="text-xl font-semibold mb-4">Academic Research</h3>
-    <div class="bg-gray-800 p-6 rounded-lg shadow-lg">
-      <h4 class="text-lg font-bold">Cloud Resource Allocation Using Timed Automata</h4>
-      <p class="text-gray-300 mt-2">Designed and verified a cloud scheduling model using UPPAAL Timed Automata. Focused on minimizing response time and maximizing SLA adherence using algorithms like FCFS, SJF, and Round-Robin.</p>
-      <p class="mt-2 text-sm text-gray-400">Tools: UPPAAL, CloudSim, Automata Theory</p>
-    </div>
-  </section>
+    <!-- Academic Research Section -->
+    <section class="p-8">
+      <h3 class="text-xl font-semibold mb-4">Academic Research</h3>
+      <div class="bg-gray-800 p-6 rounded-lg shadow-lg">
+        <h4 class="text-lg font-bold">Cloud Resource Allocation Using Timed Automata</h4>
+        <p class="text-gray-300 mt-2">Designed and verified a cloud scheduling model using UPPAAL Timed Automata. Focused on minimizing response time and maximizing SLA adherence using algorithms like FCFS, SJF, and Round-Robin.</p>
+        <p class="mt-2 text-sm text-gray-400">Tools: UPPAAL, CloudSim, Automata Theory</p>
+      </div>
+    </section>
 
-  <!-- Resume Section -->
-  <section class="p-8">
-    <h3 class="text-xl font-semibold mb-4">Resume</h3>
-    <a href="#" class="text-blue-400 underline">Download My Resume (PDF)</a>
-  </section>
+    <!-- Resume Section -->
+    <section class="p-8">
+      <h3 class="text-xl font-semibold mb-4">Resume</h3>
+      <a href="#" class="text-blue-400 underline">Download My Resume (PDF)</a>
+    </section>
 
-  <!-- Contact Section -->
-  <section class="p-8">
-    <h3 class="text-xl font-semibold mb-4">Contact</h3>
-    <p>Email: <a href="mailto:gopib3456@gmail.com" class="text-blue-400">gopib3456@gmail.com</a></p>
-    <p>LinkedIn: <a href="https://www.linkedin.com/in/gopinath-b-818056270" class="text-blue-400">linkedin.com/in/gopinath-b-818056270</a></p>
-    <p>GitHub: <a href="https://github.com/Gopib03" class="text-blue-400">github.com/Gopib03</a></p>
-  </section>
+    <!-- Contact Section -->
+    <section class="p-8">
+      <h3 class="text-xl font-semibold mb-4">Contact</h3>
+      <p>Email: <a href="mailto:gopib3456@gmail.com" class="text-blue-400">gopib3456@gmail.com</a></p>
+      <p>LinkedIn: <a href="https://www.linkedin.com/in/gopinath-b-818056270" class="text-blue-400">linkedin.com/in/gopinath-b-818056270</a></p>
+      <p>GitHub: <a href="https://github.com/Gopib03" class="text-blue-400">github.com/Gopib03</a></p>
+    </section>
 
-  <footer class="p-4 text-center text-sm text-gray-500 bg-gray-800">
-    © 2025 Gopinath Boyapalli. All rights reserved.
-  </footer>
+    <footer class="p-4 text-center text-sm text-gray-500 bg-gray-800">
+      © 2025 Gopinath Boyapalli. All rights reserved.
+    </footer>
+
+  </div>
+
+  <script>
+    const homeScreen = document.getElementById('homeScreen');
+    const mainContent = document.getElementById('mainContent');
+
+    // Focus to detect keyboard input immediately
+    homeScreen.focus();
+
+    homeScreen.addEventListener('keydown', (event) => {
+      if (event.key === 'Enter') {
+        homeScreen.style.display = 'none';
+        mainContent.style.display = 'block';
+        window.scrollTo(0, 0);
+      }
+    });
+  </script>
 
 </body>
 </html>
-
